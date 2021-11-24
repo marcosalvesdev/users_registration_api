@@ -5,14 +5,12 @@ class Filter:
         self.model = model
 
     def filter(self) -> dict:
-        pk = self.request.data.get('pk')
+        pk = self.request.data.get('user_id')
         field = self.request.data.get('field')
-        self.serializer_class.Meta.model = self.model
-        self.serializer_class.Meta.fields = [field]
-        data = self.model.objects.filter(pk=pk).values(field)
-        if len(data) != 0:
-            serializer = self.serializer_class(data=data[0])
-            serializer.is_valid(raise_exception=True)
-            return data
+        if type(field) is list:
+            self.serializer_class.Meta.fields = field
         else:
-            return {'message': f'No register in field {field} for pk {pk} in the database.'}
+            self.serializer_class.Meta.fields = [field]
+        self.serializer_class.Meta.model = self.model
+        serializer = self.serializer_class(self.model.objects.filter(pk=pk), many=True)
+        return serializer.data

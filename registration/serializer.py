@@ -9,12 +9,6 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class AdressSerializer(serializers.ModelSerializer):
-    def __init__(self, field, **kwargs):
-        super().__init__(**kwargs)
-        self.field = field
-
-    def field(self):
-        return self.field()
 
     class Meta:
         model = Adress
@@ -28,8 +22,8 @@ class AdressSerializer(serializers.ModelSerializer):
         ]
 
 
-class FilterEspcField(serializers.ModelSerializer):
+class FilterEspcFieldSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = object
-        fields = []
+        fields = None

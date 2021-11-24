@@ -3,8 +3,6 @@ This moodule only contains helper methods that can be used in other parts of thi
 If you don't want to create a method, but just a simple function I sugesting you make a new module for it
 TODO: Refectory this part to Strategy pattern
 """
-from rest_framework import serializers, status
-from rest_framework.response import Response
 from random import randint
 import re
 
@@ -62,9 +60,9 @@ class CpfAuxMethods:
         # This method just generate a random valid cpf
         cpf_digits = list()
         while True:
-            random_ls = [randint(0, 9) for num in range(0, 11)]
+            random_ls = [randint(0, 9) for _ in range(0, 11)]
             valid = CpfAuxMethods.cpf_verificator(random_ls)
-            if valid:
+            if valid is True:
                 for digit in random_ls:
                     cpf_digits.append(str(digit))
                 return ''.join(cpf_digits)

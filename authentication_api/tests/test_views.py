@@ -1,5 +1,4 @@
 import django
-
 django.setup()
 from random import randint
 from django.test import Client
@@ -48,4 +47,3 @@ def test_view_auth_create_no_admin_user():
 
 if __name__ == '__main__':
     test_view_auth_create_admin_user()
-    test_view_auth_create_no_admin_user()
