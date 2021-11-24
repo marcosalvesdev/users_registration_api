@@ -1,4 +1,4 @@
-from registration.aux_functions import CpfAuxMethods, OtherValidators, CepAuxMethods
+from registration_app.aux_functions import CpfAuxMethods, OtherValidators, CepAuxMethods
 
 
 # ######################## CPF TEST FUNCTIONS ###############################

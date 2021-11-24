@@ -1,7 +1,7 @@
 import django
 django.setup()
-from registration.serializer import FilterEspcFieldSerializer
-from registration.models import GenericModelForSwaggerFilds
+from registration_app.serializer import FilterEspcFieldSerializer
+from registration_app.models import GenericModelForSwaggerFilds
 from drf_yasg import openapi
 
 """This module has the fields for swagger documentation."""

@@ -2,7 +2,7 @@ from rest_framework import routers
 from django.urls import path, include
 from .views import UserRegistration, AdressRegistration
 
-app_name = "registration"
+app_name = "registration_app"
 
 router = routers.DefaultRouter()
 

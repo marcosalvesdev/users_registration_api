@@ -5,10 +5,8 @@ import string
 from datetime import date
 from random import randint
 from rest_framework.test import RequestsClient
-from registration.aux_functions.validators_aux_methods import (
+from registration_app.aux_functions.validators_aux_methods import (
     CpfAuxMethods,
-    CepAuxMethods,
-    OtherValidators
 )
 
 client = RequestsClient()

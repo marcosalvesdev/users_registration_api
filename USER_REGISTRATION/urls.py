@@ -43,7 +43,7 @@ urlpatterns = [
     path('api_authentication/', include('authentication_api.urls')),
     path('api_authentication/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api_authentication/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('registration/', include('registration.urls')),
+    path('registration/', include('registration_app.urls')),
 ]
 
 # SWAGGER #
