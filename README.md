@@ -62,7 +62,7 @@
     All steps teached here are for local usege of this api. If you want to use it in production you'll need to see <br/>
     how to deploy it in platforms you choise.
 </p>
-<p>Here you can see a basic way to deploy on on Heroku</p>
+<p>Here you can see a basic way to deploy on Heroku</p>
 <li><a href="https://www.youtube.com/watch?v=8l8xwvRO1_U&ab_channel=SamuelGon%C3%A7alves">Deploing on Heroku - Samuel Gonçalves</a></li>
 <p>
     I hope you enjoy to use it, you can clone this project and use how you like. I just ask you send me a message if <br/>
