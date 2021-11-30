@@ -12,7 +12,7 @@
     that you can find in requirements.txt file. 
 </p>
 
-<h2 style="color: #6495ED">A initial considerations</h2>
+<h2 style="color: #6495ED">A initial consideration</h2>
 <p>
     There's some implemetations to make. Fell free to modifi it how you likes. Report me if you find some issue <br/>
     or if you have some improvement sugestion. Thanks!<br/>
